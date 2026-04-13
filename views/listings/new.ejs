@@ -1,0 +1,107 @@
+<% layout("layout/boilerplate")%>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+     crossorigin="anonymous">
+</head> -->
+
+<div class="row">
+<div class="col-8 offset-2">
+    <br>
+    <h2>Create New Listing</h2>
+
+   <form method="post" action="/listings" novalidate class="needs-validation"  enctype="multipart/form-data">
+
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input name="listing[title]" class="form-control"
+      placeholder="Add a catchy title" required type="String">
+       <div class="valid-feedback">
+      Pefect!
+    </div>
+  </div>
+  
+
+  <div class="mb-3">
+    <label class="form-label" >Description</label>
+    <textarea name="listing[description]" class="form-control" required type="String"></textarea>
+     <div class="valid-feedback">
+      Looks good!
+      </div>
+  </div>
+
+  
+  <div class="mb-3">
+    <label class="form-label">Image</label>
+    <input name="listing[image]" class="form-control" type="file" required >
+    <div class="invalid-feedback">
+        Choose a file.
+      </div>
+  </div>
+
+
+     <div class="row">
+      <div class="mb-3 col-md-4">
+      <label class="form-label">Price</label>
+       <input name="listing[price]" type="number" class="form-control"
+        placeholder="1200" required>
+      <div class="invalid-feedback">
+        Choose a Valid Price.
+      </div>
+  </div>
+
+  
+
+  <div class="mb-3 col-md-8">
+    <label class="form-label">Country</label>
+    <input name="listing[country]" class="form-control"
+    placeholder="India"  type="String" pattern="[A-Za-z ]+" required>
+     <div class="invalid-feedback">
+      Choose a Valid Country.
+    </div>
+  </div>
+
+  <div class="mb-3">
+  <label class="form-label">Category</label>
+  <select name="listing[category]" class="form-control" required>
+    <option value="">Select Category</option>
+    <option value="Trending">Trending</option>
+    <option value="Rooms">Rooms</option>
+    <option value="Iconic Cities">Iconic Cities</option>
+    <option value="Mountains">Mountains</option>
+    <option value="Castle">Castle</option>
+    <option value="Farms">Farms</option>
+    <option value="Arctic">Arctic</option>
+    <option value="Pools">Pools</option>
+    <option value="Camping">Camping</option>
+    <option value="Desert">Desert</option>
+    <option value="Beach">Beach</option>
+    <option value="Restaurant">Restaurant</option>
+    <option value="Skyscrapers">Skyscrapers</option>
+    <option value="Others">Others</option>
+  </select>
+</div>
+
+    </div>
+
+  <div class="mb-3">
+    <label class="form-label">Location</label>
+    <input name="listing[location]" class="form-control"
+    placeholder="Gorakhpur,UttarPradesh" required type="String">
+     <div class="invalid-feedback">
+      Choose a Valid Location.
+    </div>
+  </div>
+<br>
+  <button class="btn btn-dark add-btn">Add</button>
+
+  </form>
+  <br><br>
+</div>
+</div>
+
