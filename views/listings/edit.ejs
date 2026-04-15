@@ -13,7 +13,7 @@
 <div class="row" >
 <div class="col-8 offset-2">
     <br>
-<h3>Edit your Listing</h3>
+<h3>Edit Your <b>Airbnb</b></h3>
 
  <form method="POST" action="/listings/<%= listing._id %>?_method=PUT"
    novalidate class="needs-validation" enctype="multipart/form-data" >
@@ -40,8 +40,9 @@
    </div>
   <div class="mb-3">
     <label class="form-label">Upload New Image</label>
-    <input name="listing[image]" class="form-control" type="file"
-     />
+    <input name="listing[image]" class="form-control" type="file"/>
+    <small style="color:#6366F1">Image size must be less than 2MB.</small>
+
     <!-- <div class="invalid-feedback">
        Choose Valid Link/Url.
       </div> -->

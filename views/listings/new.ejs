@@ -40,6 +40,7 @@
   <div class="mb-3">
     <label class="form-label">Image</label>
     <input name="listing[image]" class="form-control" type="file" required >
+    <small style="color:#6366F1;">Image size must be less than 2MB.</small>
     <div class="invalid-feedback">
         Choose a file.
       </div>
@@ -61,7 +62,7 @@
   <div class="mb-3 col-md-8">
     <label class="form-label">Country</label>
     <input name="listing[country]" class="form-control"
-    placeholder="India"  type="String" pattern="[A-Za-z ]+" required>
+      type="String" pattern="[A-Za-z ]+" required>
      <div class="invalid-feedback">
       Choose a Valid Country.
     </div>
@@ -93,7 +94,7 @@
   <div class="mb-3">
     <label class="form-label">Location</label>
     <input name="listing[location]" class="form-control"
-    placeholder="Gorakhpur,UttarPradesh" required type="String">
+    placeholder="City,State" required type="String">
      <div class="invalid-feedback">
       Choose a Valid Location.
     </div>
