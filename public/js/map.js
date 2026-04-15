@@ -2,7 +2,7 @@ maptilersdk.config.apiKey = mapToken;
 
 const map = new maptilersdk.Map({
   container: 'map',
-  style: maptilersdk.MapStyle.STREETS,
+  style: maptilersdk.MapStyle.STREETS.LATEST,
   center: listing.geometry.coordinates,
   zoom: 14
 });

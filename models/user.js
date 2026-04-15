@@ -5,7 +5,9 @@ import passportLocalMongoose from "passport-local-mongoose"
 const userSchema = new Schema({
     email:{
         type:String,
-        required:true
+        required:true,
+         match: [/^[a-zA-Z]+[0-9]+@gmail\.com$/, "Email must be like abc123@gmail.com"]
+    
     }
 })
 userSchema.plugin(passportLocalMongoose.default);

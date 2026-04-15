@@ -59,6 +59,30 @@ flex:1;
    align-items: center;
    justify-content: center;
  }
+/* filter */
+#filters {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.filter {
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.filter i {
+  font-size: 1.2rem;
+}
+
+.filter p {
+  font-size: 0.8rem;
+}
+
+
 
 
  /* cards */
@@ -93,6 +117,26 @@ flex:1;
     opacity: 0.2;
     background-color: white;
 }
+
+@media (max-width: 576px) {
+  .listing-img {
+    height: 200px;
+  }
+
+  .filter p {
+    font-size: 0.7rem;
+  }
+
+  .filter i {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
 /* new page */
 .add-btn{
     background-color:#fe424d !important ;
@@ -102,9 +146,30 @@ flex:1;
 
 
 /* show page */
-.show-img{
-height: 30vh;
+.show-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
 
+@media (max-width: 576px) {
+
+  .show-img {
+    height: 220px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
 }
 /* .show-btns{
    display: flex;
@@ -133,3 +198,483 @@ background-color: rgb(244, 85, 85) !important;
       height: 400px;
       width:80vh;
     }
+
+
+    /* responsive */
+
+
+
+    /* new page */
+   
+  /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .col-8.offset-2 {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .col-8.offset-2 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Heading */
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  /* Inputs */
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  /* Button */
+  /* .btn {
+    width: 100%;
+    padding: 10px;
+  } */
+
+  /* Stack price + country */
+  .row .col-md-4,
+  .row .col-md-8 {
+    width: 100% !important;
+  }
+
+}
+
+/* =========================
+   SMALL DEVICES (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+}
+
+/****show page*****/
+
+
+  /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .col-8.offset-3,
+  .col-6.offset-3,
+  .col-5.offset-3 {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .show-img {
+    height: 260px !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .col-8.offset-3,
+  .col-6.offset-3,
+  .col-5.offset-3 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .show-img {
+    height: 220px !important;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+/* 
+  .btn {
+    width: 100%;
+  } */
+
+  .card.col-5 {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  textarea {
+    width: 100% !important;
+  }
+
+   #map {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* =========================
+   SMALL MOBILE (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  .show-img {
+    height: 180px !important;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+}
+}
+
+/***edit page***/
+
+
+      /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .col-8.offset-2 {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .col-8.offset-2 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Title */
+  h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Image */
+  img {
+    width: 100%;
+    height: auto !important;
+    border-radius: 8px;
+  }
+
+  /* Inputs */
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  /* Button */
+  /* .btn {
+    width: 100%;
+    padding: 10px;
+  } */
+
+  /* Price + Country stack properly */
+  .row .col-md-4,
+  .row .col-md-8 {
+    width: 100% !important;
+  }
+
+}
+
+/* =========================
+   SMALL DEVICES (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+}
+
+/* **navbar section** */
+
+/* ///// */
+/* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .search-inp {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .search-btn {
+    padding: 0 0.9rem;
+    font-size: 0.5rem;
+
+  }
+  
+
+}
+
+/* =========================
+   MOBILE (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* Stack search nicely */
+  form.d-flex {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-inp {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .search-btn {
+    width: 90%;
+    justify-content: center;
+   
+    }
+
+  /* Center nav items */
+  .navbar-nav {
+    text-align: center;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .navbar-brand i {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .search-inp {
+    font-size: 0.85rem;
+  }
+
+  .search-btn {
+    font-size: 0.85rem;
+  }
+
+}
+.searchsection{
+  position: sticky;
+}
+
+/* error alert */
+
+    /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .alert.col-6.offset-3 {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .alert.col-6.offset-3 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .alert {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .alert-heading {
+    text-align: center;
+  }
+
+}
+
+/* =========================
+   SMALL DEVICES (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  .alert {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+/* login page */
+
+   /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .col-6.offset-3 {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .col-6.offset-3 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Heading */
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Inputs */
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  /* Button */
+  /* .btn {
+    width: 100%;
+    padding: 10px;
+  } */
+
+}
+
+/* =========================
+   SMALL DEVICES (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+}
+
+/* signup page */
+   /* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+  .col-6.offset-3 {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* =========================
+   MOBILE (≤ 576px)
+========================= */
+@media (max-width: 576px) {
+
+  .col-6.offset-3 {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Heading */
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  /* Inputs */
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  /* Button */
+  /* .btn {
+    width: 100%;
+    padding: 10px;
+  } */
+
+}
+
+/* =========================
+   SMALL DEVICES (≤ 400px)
+========================= */
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+
+}

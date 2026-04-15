@@ -1,49 +1,6 @@
 
 <% layout("/layout/boilerplate")%> 
 <!-- filter section -->
-
-<style>
-    #filters{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .filter{
-        text-align: center;
-        margin-right: 2rem;
-        margin-top: 2rem;
-        opacity: 0.7;
-    }
-    .filter:hover{
-        opacity: 1;
-        cursor: pointer;
-      
-    }
-    a{
-        text-decoration: none;
-    }
-    p,i{
-        color: black;
-    }
-    .icon-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
-  scroll-behavior: smooth;
-}
-
-/* Hide scrollbar (Chrome, Safari) */
-.icon-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar (Firefox) */
-.icon-scroll {
-  scrollbar-width: none;
-}
-</style>
-
-
   <div id="filters">
     <div class="d-flex overflow-auto gap-4 pb-2 py-2 icon-scroll" style="white-space: nowrap;">
 
@@ -118,21 +75,14 @@
 </div>
 </div>
 
-       
- 
-  
-
-
-
-
     <!-- <h2>Explore Destinations</h2> -->
    <br>
-   <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-xsm-1" >
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" >
      <%  for (let listings of allListings){ %>
      <a href="/listings/<%= listings._id %>" class="listing-links">
-    <div class="card col listing-card" style="width: 20rem;" >
+    <div class="card col listing-card h-100 " >
 
-     <img src="<%= listings.image.url%>" class="card-img-top" alt="listing_image" style="height:20rem">
+     <img src="<%= listings.image.url%>" class="card-img-top" alt="listing_image" style="height:20rem" loading="lazy" decoding="async">
   <div class="card-body ">
       <p class="card-text" style="margin:0;">
       <b class="text-break"><%= listings.title %></b>
@@ -144,3 +94,48 @@
        <% } %> 
    </div>
 
+
+
+
+
+   
+   <style>
+    #filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter{
+        text-align: center;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        opacity: 0.7;
+    }
+    .filter:hover{
+        opacity: 1;
+        cursor: pointer;
+      
+    }
+    a{
+        text-decoration: none;
+    }
+    p,i{
+        color: black;
+    }
+    .icon-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar (Chrome, Safari) */
+.icon-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+.icon-scroll {
+  scrollbar-width: none;
+}
+</style>
