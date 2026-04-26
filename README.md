@@ -1,4 +1,4 @@
-Overview
+
 Wanderlust is a full stack web application that allows users to create, explore, and review listings. The application is built using Node.js, Express, and MongoDB, following MVC architecture and RESTful design principles. It includes secure authentication, role-based authorization, session management, and cloud-based image handling.
 The project is deployed in a production environment and demonstrates real-world backend development practices.
 
@@ -54,11 +54,11 @@ Deployment:
 •	Uses cloud database and environment configuration 
 
 Tech Stack:- 
-Backend: Node.js, Express.js| 
-Frontend: EJS, Bootstrap| 
-Database: MongoDB Atlas, Mongoose| 
-Authentication: Passport.js| 
-Session Management: Express-session, Connect-Mongo| 
-File Upload: Multer| 
-Other Tools: Dotenv, Method-Override, Connect-Flash| 
+Backend: Node.js, Express.js
+Frontend: EJS, Bootstrap
+Database: MongoDB Atlas, Mongoose
+Authentication: Passport.js
+Session Management: Express-session, Connect-Mongo
+File Upload: Multer
+Other Tools: Dotenv, Method-Override, Connect-Flash
 

@@ -27,3 +27,5 @@ export const destroyReview =async(req,res)=>{
  req.flash("success","Post Deleted!");
   res.redirect(`/listings/${id}`);
 };
+
+// average calculate

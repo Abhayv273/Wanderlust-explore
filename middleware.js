@@ -2,6 +2,7 @@ import Listing from "./models/listing.js";
 import ExpressError from "./utils/ExpressError.js";
 import { listingSchema ,reviewSchema } from "./schema.js";
 import Review from "./models/review.js"; 
+
 //logged user check middleware function
 export const isLoggedIn = (req, res, next) => {
   if (!req.isAuthenticated()) {
@@ -64,11 +65,3 @@ export const isReviewAuthor = async(req,res,next)=>{
   }
 next();
 };
-
-// module.exports.isLoggedIn=(req,res,next)=>{
-//     if(!req.isAuthenticated()){
-//     req.flash("error","You must logged in to create listing!")
-//     return res.redirect("/login");
-//   }
-// next();
-// };

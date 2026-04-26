@@ -7,10 +7,7 @@ const upload = multer({
   limits: {
     fileSize: 2 * 1024 * 1024 
 }});
-
-
 import express from "express";
-
 import mongoose from "mongoose";
 // import Listing from "./models/listing.js";
 import path from "path";
@@ -46,8 +43,8 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-//used or intialise 
 
+//used or intialise 
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine","ejs");
@@ -103,22 +100,12 @@ const sessionOptions={
 };
 
 
-// console.log("Step 1");
-// await something();
-// console.log("Step 2"); // if not printed → issue here
-
-// app.get("/", (req, res) => {
-//   res.send("Hi, I am root");
-// });
-
 //session middleware
 app.use(session(sessionOptions));
 app.use(flash());
-
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
-
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -187,10 +174,6 @@ app.post("/login",
   // controllers/listings-index
    );
    
-
-
-
-
   //*******reveiw route ********
 
   //1.  review post route
@@ -201,7 +184,6 @@ app.post("/login",
      // controllers/reviews-createreview
 
 
-
  //2. delete review route,
   app.delete("/listings/:id/reviews/:reviewId",
   isLoggedIn,
@@ -210,21 +192,15 @@ app.post("/login",
     //controllers/reviews-destroyreview
 
 
-
-
   //*******new route********(keep always on before of show route)
   app.get("/listings/new",isLoggedIn, listingController.rendernewform);
     //controllers/listing-rendernewform
-
-
-
 
 
    //*******Show Route********
    app.get("/listings/:id", wrapAsync(listingController.showListing)
       // controllers/listings-showlisting 
     );
-
 
 //*******create route ( new listing /request vai hoppscotch )********
 app.post("/listings",validateListing,
@@ -233,8 +209,6 @@ app.post("/listings",validateListing,
     wrapAsync(listingController.createListing)
  // controllers/listings-createlisting 
 );
-
-
 
 
 //*******Edit Route********
@@ -256,7 +230,6 @@ app.put("/listings/:id",validateListing,
 );
 
 
-
 //******Delete Route********
 app.delete("/listings/:id",
   isLoggedIn,
@@ -266,7 +239,6 @@ app.delete("/listings/:id",
 );
 
 
-
 //********Users-logout route***************
 app.get("/logout",userController.logout);
 // controllers/user-logout
@@ -274,7 +246,6 @@ app.get("/logout",userController.logout);
 //*****Seach route */
 app.get("/search",wrapAsync(listingController.searchListings))
 // controllers/listings-searchlisting
-
 
 
 
@@ -291,8 +262,6 @@ app.use((req, res, next) => {
 });
 
 
-
-
 //######error handling 
 app.use((err,req,res,next)=>{
   let{statusCode=500,message="Something Went Wrong"}=err;
@@ -303,6 +272,8 @@ app.use((err,req,res,next)=>{
 
   
 })
+
+
 
 // server stabalise
 const PORT = 8080;

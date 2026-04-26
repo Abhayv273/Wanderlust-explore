@@ -36,7 +36,7 @@ export const rendernewform= (req,res)=>{
 export const showListing= async(req,res)=>{
    let {id}=req.params;
    const listing = await Listing.findById(id)
-  //  .populate("reviews").populate("owner"); nesting used below// post delete whenever list del
+  //  .populate("reviews").populate("owner"); nesting i used below// post delete whenever list del
 .populate({
     path:"reviews",
       populate:{
@@ -61,11 +61,6 @@ const response = await geocoding.forward(
   { limit: 1 }
 );
 
-
-//  response.save();
-
-// console.log(response.features[0].geometry);
-
   let url =req.file.path;
   let filename=req.file.filename;
 const result = listingSchema.validate(req.body);
@@ -77,7 +72,6 @@ const result = listingSchema.validate(req.body);
   newListing.geometry= response.features[0].geometry;
   let savedListing =await newListing.save();
   // console.log(savedListing);
-
   // await newListing.save();
   req.flash("success","New Listing Created!");
   res.redirect("/listings");
@@ -146,23 +140,4 @@ export const searchListings= async (req, res) => {
 
   res.render("listings/index.ejs", { allListings: listings });
 };
-
-
-
-
-
-//categories
-
-// export const Filter = async (req, res) => {
-//   let { category } = req.query;
-
-//   let listings;
-//   if (category) {
-//     listings = await Listing.find({ category });
-//   } else {
-//     listings = await Listing.find({});
-//   }
-
-//   res.render("listings/index", { listings, category });
-// };
 

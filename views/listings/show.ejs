@@ -55,11 +55,7 @@
     <h4>Leave a Review</h4>
  <hr>
     <form action="/listings/<%=listing._id%>/reviews" method="POST" novalidate class="needs-validation">
-      <!-- <div class="mb-3 mt-3">
-        <label for="rating" class="form-label">Rating</label>
-        <input type="range" min="1" max="5" id="rating" name="review[rating]" class="form-range" value="5"/>
-      </div> -->
-      <!-- ... -->
+    
         <div class="mb-3 mt-3">
         <legend for="rating" class="form-label">Rating</legend>
   <fieldset class="starability-slot">
@@ -115,9 +111,9 @@
       <% for(let review of listing.reviews){ %>
         <div class="card col-5 ms-3 mb-3">
           <div class="card-body">
-           <span style="display: flex; justify-content: space-between;"><h5 class="card-title text-truncate">@<%= review.author.username %></h5>
-          
-            <p><%= review.createdAt.toLocaleDateString() %></p>
+           <span style="display: flex; justify-content: space-between;">
+          <h5 class="card-title text-truncate">@<%= review.author.username %></h5>
+          <small><%= review.createdAt.toLocaleDateString('en-GB') %></small>
           </span>
 
             <p class="starability-result card-text" data-rating="<%=review.rating%>"></p>
