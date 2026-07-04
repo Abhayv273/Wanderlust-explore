@@ -80,3 +80,20 @@ npm install
 
 npm start
 
+## 👨‍💻 Author
+
+**Abhay Verma**
+
+📧 abhay73verma@gmail.com
+
+💼 LinkedIn  
+https://www.linkedin.com/in/abhay-verma-36488325b/
+
+💻 GitHub  
+https://github.com/Abhayv273
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
