@@ -1,64 +1,82 @@
+# 🌍 Wanderlust
+A full-stack travel listing platform inspired by Airbnb.
 
-Wanderlust is a full stack web application that allows users to create, explore, and review listings. The application is built using Node.js, Express, and MongoDB, following MVC architecture and RESTful design principles. It includes secure authentication, role-based authorization, session management, and cloud-based image handling.
-The project is deployed in a production environment and demonstrates real-world backend development practices.
+🚀 Live Demo:
+https://wanderlust-explore.onrender.com
 
-Features
+💻 GitHub:
+https://github.com/Abhayv273/Wanderlust-Your-Own-Destinations
+---
 
-Core Functionality:- 
-•	Create, read, update, and delete listings 
-•	Add and manage reviews for listings 
-•	Search functionality for listings 
-•	Server-side rendered UI using EJS 
+## 📷 Preview
+<p align="center">
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/41890691-ad3d-457c-9f36-ac04e176da8d" />
+<img width="900"  alt="image" src="https://github.com/user-attachments/assets/4c7490d9-c83e-4703-9547-1b85aa5792ec" />
+<img width="900"  alt="Screenshot 2026-07-04 124421" src="https://github.com/user-attachments/assets/59698db7-40bc-4aef-890e-294996d0bc83" />
+<img width="900"  alt="Screenshot 2026-07-04 124557" src="https://github.com/user-attachments/assets/d8b7b0d1-ccab-4728-93e2-91ad8cedf0e3" />
+<img width="900"  alt="Screenshot 2026-07-04 124608" src="https://github.com/user-attachments/assets/a5b4da68-f99e-4b1a-9015-2bfcca204e26" />
+</p>
 
-Authentication & Authorization:- 
-•	User authentication using Passport.js (Local Strategy) 
-•	Session-based login with persistent storage 
-•	Role-based access control: 
-o	Only listing owners can edit/delete listings 
-o	Only review authors can delete reviews 
-•	Route protection using middleware 
 
-Data Handling & Scalability:- 
-•	Pagination implemented for handling large datasets 
-•	Filtering system for refined search results 
-•	MongoDB Atlas used for cloud database storage 
-•	Mongoose used for schema modeling and validation 
+## Logged User  
+<p align="center">
+<img width="960" height="600" alt="Screenshot 2026-07-04 125442" src="https://github.com/user-attachments/assets/b04d10b4-a7b4-4d99-8cf3-1ea6eb27e88b" />
+<img width="960" height="600" alt="Screenshot 2026-07-04 125526" src="https://github.com/user-attachments/assets/b153dfd7-6484-4f6a-b925-0633565a7e7f" />
+<img width="960" height="600" alt="Screenshot 2026-07-04 125544" src="https://github.com/user-attachments/assets/1580653a-66c8-4e6e-9108-80cdc017360a" />
+<img width="960" height="600" alt="Screenshot 2026-07-04 125610" src="https://github.com/user-attachments/assets/abb1c72c-3be2-4998-9c36-d5bcc11c1a67" />
+</>p
+  
+---
+## ✨ Features
 
-Media & Integrations:- 
-•	Image upload using Multer 
-•	Cloud storage integration for media handling 
-•	Map integration for location-based listing visualization 
+- Secure Authentication
+- Authorization
+- CRUD Listings
+- Reviews & Ratings
+- Cloudinary Image Upload
+- Interactive Maps
+- Responsive Design
 
-Backend Architecture:- 
-•	MVC architecture for separation of concerns 
-•	RESTful routing structure 
-•	Reusable middleware for: 
-o	Authentication 
-o	Authorization 
-o	Validation 
-•	Centralized error handling with custom error classes 
-•	Async error handling using wrapper functions 
+---
 
-Session & Security:- 
-•	Session management using express-session 
-•	Persistent session storage using connect-mongo 
-•	Secure cookies with expiration and HTTP-only flags 
-•	Environment variable management using dotenv 
+## 🛠 Tech Stack
 
-Developer Experience:- 
-•	API testing and documentation using Postman / Swagger 
-•	Clean and scalable project structure 
+Frontend
+- HTML
+- CSS
+- Bootstrap
+- EJS
 
-Deployment:
-•	Fully deployed on Render 
-•	Uses cloud database and environment configuration 
+Backend
+- Node.js
+- Express.js
 
-Tech Stack:- 
-Backend: Node.js, Express.js
-Frontend: EJS, Bootstrap
-Database: MongoDB Atlas, Mongoose
-Authentication: Passport.js
-Session Management: Express-session, Connect-Mongo
-File Upload: Multer
-Other Tools: Dotenv, Method-Override, Connect-Flash
+Database
+- MongoDB Atlas
+
+Authentication
+- Passport.js
+- Express Session
+
+Cloud
+- Cloudinary
+- Render
+
+---
+
+## 📁 Project Structure
+
+controllers/
+models/
+routes/
+views/
+middleware/
+
+---
+
+## ⚙ Installation
+
+npm install
+
+npm start
 
