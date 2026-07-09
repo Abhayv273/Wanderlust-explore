@@ -5,7 +5,7 @@ A full-stack travel listing platform inspired by Airbnb.
 https://wanderlust-explore.onrender.com
 
 💻 GitHub:
-https://github.com/Abhayv273/Wanderlust-Your-Own-Destinations
+https://github.com/Abhayv273/Wanderlust-explore.git
 ---
 
 ## 📷 Preview
